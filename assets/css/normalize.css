@@ -24,7 +24,7 @@
     --color-border: #dddddd;
 
     /* Typography */
-    --font-family: "dana-regular", Tahoma, sans-serif;
+    --font-family: "TTNorms-Regular", Tahoma, sans-serif;
     --font-size-base: 16px;
     --line-height-base: 1.5;
 
@@ -39,8 +39,29 @@
    - Define your project fonts here
 =================================== */
 @font-face {
-    font-family: "myfont";
-    src: url("../myfont.woff2") format("woff2");
+    font-family: "Times-new-roman-italic";
+    src: url("../fonts/Times-new-roman-italic.ttf") format("ttf");
+    /* change url */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTNorms-Regular";
+    src: url("../fonts/TTNorms-Regular.otf") format("otf");
+    /* change url */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTNorms-Light";
+    src: url("../fonts/TTNorms-Light.otf") format("otf");
+    /* change url */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTNorms-Medium";
+    src: url("../fonts/TTNorms-Medium.otf") format("otf");
     /* change url */
     font-weight: normal;
     font-style: normal;
@@ -52,7 +73,7 @@
 html {
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
-    direction: rtl;
+    direction: ltr;
     /* for RTL websites */
 }
 
