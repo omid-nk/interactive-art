@@ -41,32 +41,22 @@
    - Define your project fonts here
 =================================== */
 @font-face {
-    font-family: "Times-new-roman-italic";
-    src: url("../fonts/Times-new-roman-italic.ttf") format("ttf");
-    /* change url */
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Times";
+    src: url("../fonts/Times-new-roman-italic.ttf");
 }
 @font-face {
     font-family: "TTNorms-Regular";
-    src: url("../fonts/TTNorms-Regular.otf") format("otf");
-    /* change url */
-    font-weight: normal;
-    font-style: normal;
+    src: url("../fonts/TTNorms-Regular.otf");
 }
+
 @font-face {
     font-family: "TTNorms-Light";
-    src: url("../fonts/TTNorms-Light.otf") format("otf");
-    /* change url */
-    font-weight: normal;
-    font-style: normal;
+    src: url("../fonts/TTNorms-Light.otf");
 }
+
 @font-face {
     font-family: "TTNorms-Medium";
-    src: url("../fonts/TTNorms-Medium.otf") format("otf");
-    /* change url */
-    font-weight: normal;
-    font-style: normal;
+    src: url("../fonts/TTNorms-Medium.otf");
 }
 
 /* ================================
@@ -127,12 +117,10 @@ p {
 
 h1 {
     font-size: 2rem;
-    font-weight: bold;
 }
 
 h2 {
     font-size: 1.5rem;
-    font-weight: bold;
 }
 
 ul,
