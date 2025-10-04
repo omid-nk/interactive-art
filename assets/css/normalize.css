@@ -28,10 +28,12 @@
     --font-size-base: 16px;
     --line-height-base: 1.5;
 
-    /* Layout & spacing */
+    /* Layout & spacing & transition & shadows */
     --container-width: 1200px;
     --spacing: 1rem;
     --radius: 8px;
+    --box-shadow: 2px 2px 8px -2px #00000050;
+    --transition: all 0.2s ease;
 }
 
 /* ================================

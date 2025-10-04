@@ -1,0 +1,80 @@
+/* ================================
+   top header
+=================================== */
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+
+.nav, .menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu__item:hover {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.header__link{
+    padding: .4rem .6rem;
+    background-color: var(--color-primary);
+    border-radius: var(--radius);
+    color: var(--color-bg);
+    transition: var(--transition);
+}
+.header__link:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/* ================================
+   hero section
+=================================== */
+.hero-section{
+    display: flex;
+    margin-top: 10rem;
+}
+.left-hero__section{
+    width: 50%;
+}
+.left-hero__section > h1{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+.left-hero__section > p{
+    color: rgb(80, 80, 80);
+    width: 400px;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+.btns-hero__section{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    color: var(--color-bg);
+}
+.contact-btn{
+    padding: 0.8rem 1.5rem;
+    background: var(--color-primary);
+    border-radius: var(--radius);
+}
+.works-btn{
+    padding:0.8rem 1.5rem;
+    background: var(--color-secondary);
+    border-radius: var(--radius);
+}
+
+.right-hero__section {
+    width: 50%;
+    direction: rtl;
+}
+
+/* ================================
+   how it work
+=================================== */
