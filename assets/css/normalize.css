@@ -18,7 +18,7 @@
 :root {
     /* Colors */
     --color-bg: #ffffff;
-    --color-text: #222222;
+    --color-text: #101a52;
     --color-primary: #0066ff;
     --color-secondary: #ff6600;
     --color-border: #dddddd;
@@ -95,7 +95,6 @@ body {
 .container {
     max-width: var(--container-width);
     margin-inline: auto;
-    padding-inline: var(--spacing);
 }
 
 /* ================================
