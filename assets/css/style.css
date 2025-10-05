@@ -29,6 +29,9 @@
 .header__link:hover{
     box-shadow: var(--box-shadow);
 }
+.header__icon{
+    display: none;
+}
 
 /* ================================
    hero section
@@ -285,11 +288,32 @@ footer{
 }
 
 @media only screen and (max-width:1024px) {
+    .header__icon {
+        display: block;
+        font-size: 1.6rem;
+        cursor: pointer;
+        z-index: 1;
+    }
     .header__link {
         display: none;
     }
     .menu{
-        display: none;
+        width: 16rem;
+        flex-direction: column;
+        gap: 0;
+        position: fixed;
+        top: 0;
+        left: -256px;
+        bottom: 0;
+        background: var(--color-bg);
+        box-shadow: var(--box-shadow);
+        padding-top: 4rem;
+        transition: all 0.3s ease;
+    }
+    .menu__item{
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
     }
     .content-hero__section > h1, .content-hero__section > p {
         text-align: center;
