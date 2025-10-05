@@ -38,7 +38,7 @@
     align-items: center;
     margin-top: 8rem;
 }
-.left-hero__section{
+.left-hero__section,.right-hero__section{
     flex-basis: 50%;
 }
 .content-hero__section{
@@ -72,11 +72,6 @@
     background: var(--color-secondary);
     border-radius: var(--radius);
 }
-
-.right-hero__section {
-    flex-basis: 50%;
-    direction: rtl;
-}
 .right-hero__section > img{
     width: 100%;
 }
@@ -100,6 +95,7 @@
 }
 .how-it-work > h2{
     font-size: 28px;
+    text-align: center;
     font-weight: 500;
 }
 .works-content{
@@ -149,8 +145,9 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 35rem;
+    max-width: 35rem;
     margin-bottom: 2rem;
+    align-items: center;
 }
 
 .comments__box-section{
@@ -207,7 +204,8 @@
     align-items: center;
     flex-direction: column;
     margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
 .portfolio-section > p {
@@ -240,6 +238,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     color: var(--color-bg);
     padding: 0 0.5rem;
 }
@@ -250,16 +250,100 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #fff;
+    border-radius: var(--radius);
 }
 .newsletter__input > input{
     color: var(--color-text);
     outline: none;
-    padding: 1rem;
+    padding: 0.8rem 1rem;
+    max-width:100% ;
 }
 .newsletter__input > button{
+    max-width: 44px;
     background-color: var(--color-primary);
     padding: 0.8rem;
-    margin-right: 0.3rem;
+    margin-right: 0.2rem;
     border-radius: var(--radius);
+}
+
+/* ================================
+    Responsive
+=================================== */
+
+@media only screen and (max-width:1280px) {
+    .container {
+        padding: 0 2rem;
+    }
+    .hero-section{
+        margin-top: 3rem;
+    }
+    .how-it-work{
+        margin: 5rem 0;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .header__link {
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .content-hero__section > h1, .content-hero__section > p {
+        text-align: center;
+    }
+    .btns-hero__section{
+        justify-content: center;
+    }
+    .portfolio-img{
+        gap: 1rem;
+    }
+    .logo-section{
+        gap: 1.5rem;
+    }
+}
+@media only screen and (max-width:824px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+    .left-hero__section{
+        margin-top: 2rem;
+    }
+
+    .works-content{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .content-hero__section{
+        max-width: 100%;
+    }
+    .comments__box-section{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer-newsletter{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-newsletter>p{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:425px) {
+    .container{
+        padding: 0 1.5rem;
+    }
+    .works-btn,
+    .contact-btn {
+        width: 50%;
+        text-align: center;
+        padding: 0.8rem 0;
+    }
+    .portfolio-section > h2,.how-it-work > h2, .content-hero__section > h1{
+        font-size: 24px;
+    }
+    
 }
