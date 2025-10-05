@@ -96,6 +96,7 @@
 .how-it-work > p{
     color: rgb(80, 80, 80);
     margin-bottom: 0.8rem;
+    text-transform: uppercase;
 }
 .how-it-work > h2{
     font-size: 28px;
@@ -133,6 +134,7 @@
 .person-comment-bg{
     background-color: var(--color-primary);
     padding: 4rem 0;
+    max-width: 100%;
 }
 .person-comment-section{
     display: flex;
@@ -187,7 +189,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     margin: 4rem 0 0 ;
     gap: 6rem;
 }
@@ -197,4 +199,35 @@
 
 /* ================================
     Portfolio section
+=================================== */
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.portfolio-section > p {
+    color: rgb(80, 80, 80);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.portfolio-section > h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.portfolio-img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin: 4rem 0;
+}
+
+/* ================================
+    Footer
 =================================== */
