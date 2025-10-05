@@ -189,6 +189,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     max-width: 100%;
     margin: 4rem 0 0 ;
     gap: 6rem;
@@ -231,3 +232,34 @@
 /* ================================
     Footer
 =================================== */
+footer{
+    background-color: var(--color-primary);
+    padding: 4rem 0;
+}
+.footer-newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-bg);
+    padding: 0 0.5rem;
+}
+.footer-newsletter > p {
+    font-size: 22px;
+}
+.newsletter__input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.newsletter__input > input{
+    color: var(--color-text);
+    outline: none;
+    padding: 1rem;
+}
+.newsletter__input > button{
+    background-color: var(--color-primary);
+    padding: 0.8rem;
+    margin-right: 0.3rem;
+    border-radius: var(--radius);
+}
