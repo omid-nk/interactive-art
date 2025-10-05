@@ -271,6 +271,7 @@ footer{
     border-radius: var(--radius);
 }
 
+
 /* ================================
     Responsive
 =================================== */
@@ -369,5 +370,8 @@ footer{
     .portfolio-section > h2,.how-it-work > h2, .content-hero__section > h1{
         font-size: 24px;
     }
+    .newsletter__input {
+        width: 100%;
+}
     
 }
